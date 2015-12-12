@@ -1,0 +1,648 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MatchesActivity" >
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="132dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="대진표"
+            android:background="#9bef9c"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_weight="0.59"
+            android:textSize="43dp" />
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="20dp"
+            android:background="#9bef9c"
+            android:text="16강"
+            android:textSize="20dp" />
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#999999"
+            android:stretchColumns="*"  >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:background="#9bef9c"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="경기" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:background="#9bef9c"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="이름(A)" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:background="#9bef9c"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="이름(B)" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:background="#9bef9c"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="A" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:background="#9bef9c"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text=":" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:background="#9bef9c"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="B" />
+            </TableRow>
+
+            <!-- 16강 1번 째 경기 -->
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="1"
+                    android:background="#ffffff" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="name"
+                    android:id="@+id/tv1"
+                    android:background="#ffffff" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="name"
+                    android:id="@+id/tv2"
+                    android:background="#ffffff" />
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:id="@+id/s16_1a"
+                    android:inputType = "number"
+                    android:text="0"
+                    android:background="#ffffff" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text=":"
+                    android:background="#ffffff" />
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:id="@+id/s16_1b"
+                    android:inputType = "number"
+                    android:text="0"
+                    android:background="#ffffff" />
+            </TableRow>
+
+            <!-- 16강 2번 째 경기 -->
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="2"
+                    android:background="#ffffff" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="name"
+                    android:id="@+id/tv3"
+                    android:background="#ffffff" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="name"
+                    android:id="@+id/tv4"
+                    android:background="#ffffff" />
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:id="@+id/s16_2a"
+                    android:inputType = "number"
+                    android:text="0"
+                    android:background="#ffffff" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text=":"
+                    android:background="#ffffff" />
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:id="@+id/s16_2b"
+                    android:inputType = "number"
+                    android:text="0"
+                    android:background="#ffffff" />
+            </TableRow>
+
+            <!-- 16강 3번 째 경기 -->
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="3"
+                    android:background="#ffffff" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="name"
+                    android:id="@+id/tv5"
+                    android:background="#ffffff" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="name"
+                    android:id="@+id/tv6"
+                    android:background="#ffffff" />
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:id="@+id/s16_3a"
+                    android:inputType = "number"
+                    android:text="0"
+                    android:background="#ffffff" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text=":"
+                    android:background="#ffffff" />
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:id="@+id/s16_3b"
+                    android:inputType = "number"
+                    android:text="0"
+                    android:background="#ffffff" />
+            </TableRow>
+
+            <!-- 16강 4번 째 경기 -->
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="4"
+                    android:background="#ffffff" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="name"
+                    android:id="@+id/tv7"
+                    android:background="#ffffff" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="name"
+                    android:id="@+id/tv8"
+                    android:background="#ffffff" />
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:id="@+id/s16_4a"
+                    android:inputType = "number"
+                    android:text="0"
+                    android:background="#ffffff" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text=":"
+                    android:background="#ffffff" />
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:id="@+id/s16_4b"
+                    android:inputType = "number"
+                    android:text="0"
+                    android:background="#ffffff" />
+            </TableRow>
+
+            <!-- 16강 5번 째 경기 -->
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="5"
+                    android:background="#ffffff" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="name"
+                    android:id="@+id/tv9"
+                    android:background="#ffffff" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="name"
+                    android:id="@+id/tv10"
+                    android:background="#ffffff" />
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:id="@+id/s16_5a"
+                    android:inputType = "number"
+                    android:text="0"
+                    android:background="#ffffff" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text=":"
+                    android:background="#ffffff" />
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:id="@+id/s16_5b"
+                    android:inputType = "number"
+                    android:text="0"
+                    android:background="#ffffff" />
+            </TableRow>
+
+            <!-- 16강 6번 째 경기 -->
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="6"
+                    android:background="#ffffff" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="name"
+                    android:id="@+id/tv11"
+                    android:background="#ffffff" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="name"
+                    android:id="@+id/tv12"
+                    android:background="#ffffff" />
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:id="@+id/s16_6a"
+                    android:inputType = "number"
+                    android:text="0"
+                    android:background="#ffffff" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text=":"
+                    android:background="#ffffff" />
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:id="@+id/s16_6b"
+                    android:inputType = "number"
+                    android:text="0"
+                    android:background="#ffffff" />
+            </TableRow>
+
+            <!-- 16강 7번 째 경기 -->
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="7"
+                    android:background="#ffffff" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="name"
+                    android:id="@+id/tv13"
+                    android:background="#ffffff" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="name"
+                    android:id="@+id/tv14"
+                    android:background="#ffffff" />
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:id="@+id/s16_7a"
+                    android:inputType = "number"
+                    android:text="0"
+                    android:background="#ffffff" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text=":"
+                    android:background="#ffffff" />
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:id="@+id/s16_7b"
+                    android:inputType = "number"
+                    android:text="0"
+                    android:background="#ffffff" />
+            </TableRow>
+
+            <!-- 16강 8번 째 경기 -->
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="8"
+                    android:background="#ffffff" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="name"
+                    android:id="@+id/tv15"
+                    android:background="#ffffff" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="name"
+                    android:id="@+id/tv16"
+                    android:background="#ffffff" />
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:id="@+id/s16_8a"
+                    android:text="0"
+                    android:inputType = "number"
+                    android:background="#ffffff" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text=":"
+                    android:background="#ffffff" />
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:id="@+id/s16_8b"
+                    android:text="0"
+                    android:inputType = "number"
+                    android:background="#ffffff" />
+            </TableRow>
+        </TableLayout>
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:text="NEXT"
+            android:layout_gravity="right"
+            android:id="@+id/next8">
+        </Button>
+
+        <include layout="@layout/activity_matches8"/>
+        <include layout="@layout/activity_matches4"/>
+        <include layout="@layout/activity_matchesfinal"/>
+
+    </LinearLayout>
+</ScrollView>

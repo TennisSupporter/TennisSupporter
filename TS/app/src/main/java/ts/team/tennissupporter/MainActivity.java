@@ -13,27 +13,30 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        // Splash(ë¡œë”©í™”ëª…) ë„ìš°ê¸°
+        startActivity(new Intent(this, Splash_Activity.class));
     }
 
     public void informationButtonClicked(View v){
-        Toast.makeText(getApplicationContext(), "´ëÈ¸Á¤º¸ °Ô½ÃÆÇÀ¸·Î ÀÌµ¿ÇÕ´Ï´Ù.", Toast.LENGTH_LONG).show();
+        Toast.makeText(getApplicationContext(), "ëŒ€íšŒì •ë³´ ê²Œì‹œíŒìœ¼ë¡œ ì´ë™í•©ë‹ˆë‹¤.", Toast.LENGTH_LONG).show();
         Intent myIntent = new  Intent(Intent.ACTION_VIEW, Uri.parse("http://www.kutca.com/bbs/zboard.php?id=circle_open&category="));
         startActivity(myIntent);
     }
 
     public void boardButtonClicked(View v){
-        Toast.makeText(getApplicationContext(), "ÀÚÀ¯ °Ô½ÃÆÇÀ¸·Î ÀÌµ¿ÇÕ´Ï´Ù.", Toast.LENGTH_LONG).show();
+        Toast.makeText(getApplicationContext(), "ììœ ê²Œì‹œíŒìœ¼ë¡œ ì´ë™í•©ë‹ˆë‹¤.", Toast.LENGTH_LONG).show();
         Intent myIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.kutca.com/bbs/zboard.php?id=freeboard&category="));
         startActivity(myIntent);
     }
 
     public void mangerButtonClicked(View v) {
-        Intent intent = new Intent(getApplicationContext(), ManagerModeActivity.class);
+        Intent intent = new Intent(getApplicationContext(), PasswordActivity.class);
         startActivity(intent);
 
     }
     public void matchesButtonClicked(View v) {
-        Intent intent = new Intent(getApplicationContext(), ManagerModeActivity.class);
+        Intent intent = new Intent(getApplicationContext(), MatchesActivity.class);
         startActivity(intent);
 
     }

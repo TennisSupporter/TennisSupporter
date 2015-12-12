@@ -8,7 +8,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="ts.team.tennissupporter.MainActivity"
-    android:background="#171a7c"
+    android:background="@drawable/rogerfederer"
     android:orientation="vertical">
 
     <Button
@@ -22,9 +22,11 @@
         android:paddingRight="20dp"
         android:paddingTop="25dp"
         android:paddingBottom="25dp"
-        android:layout_marginBottom="31dp"
+        android:background="#5a815b5b"
+        android:layout_marginBottom="24dp"
         android:layout_above="@+id/button2"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <Button
         android:layout_width="wrap_content"
@@ -35,10 +37,11 @@
         android:padding="25dp"
         android:textSize="25dp"
         android:nestedScrollingEnabled="true"
-        android:layout_marginBottom="35dp"
+        android:layout_marginBottom="41dp"
+        android:background="#5a806262"
         android:layout_above="@+id/button3"
-        android:layout_alignLeft="@+id/button3"
-        android:layout_alignStart="@+id/button3" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <Button
         android:layout_width="wrap_content"
@@ -48,17 +51,21 @@
         android:padding="25dp"
         android:textSize="25dp"
         android:onClick="matchesButtonClicked"
+        android:layout_marginBottom="71dp"
+        android:background="#5a714d4b"
         android:layout_above="@+id/button4"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="66dp" />
+        android:layout_alignLeft="@+id/button2"
+        android:layout_alignStart="@+id/button2" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="관리자"
         android:id="@+id/button4"
+        android:onClick="mangerButtonClicked"
+        android:background="#5affffff"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:onClick="mangerButtonClicked" />
+        android:layout_alignParentEnd="true" />
+
 </RelativeLayout>
