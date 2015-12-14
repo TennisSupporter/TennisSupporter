@@ -40,3 +40,6 @@ Unless required by applicable law or agreed to in writing, software distributed 
 ####v_0.7 	
 
 	-		UI 개선
+####v_1.0 	
+
+	-		Password 화면 UI 개선, 대진표 기능 개선
