@@ -150,7 +150,7 @@ public class MatchesActivity extends AppCompatActivity {
         TextView tv1_FinalA = (TextView) findViewById(R.id.tv1_FinalA);
         TextView tv2_FinalB = (TextView) findViewById(R.id.tv2_FinalB);
 
-        tv1_FinalA.setText(prefs.getString("tv2_FinalB", "준비중"));
+        tv1_FinalA.setText(prefs.getString("tv1_FinalA", "준비중"));
         tv2_FinalB.setText(prefs.getString("tv2_FinalB", "준비중"));
 
         // 결승 대진표 Score 가져오기

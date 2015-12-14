@@ -14,9 +14,10 @@
         android:layout_height="30dp"
         android:layout_marginBottom="5dp"
         android:layout_marginTop="20dp"
-        android:background="#9bef9c"
+        android:background="#201bc1"
         android:text="결승"
-        android:textSize="20dp" />
+        android:textSize="20dp"
+        android:textColor="#ffffff" />
     <TableLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
@@ -35,55 +36,61 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="1dp"
                 android:layout_marginLeft="1dp"
-                android:background="#9bef9c"
+                android:background="#201bc1"
                 android:gravity="center"
                 android:padding="3dp"
-                android:text="경기" />
+                android:text="경기"
+                android:textColor="#ffffff" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="1dp"
                 android:layout_marginLeft="1dp"
-                android:background="#9bef9c"
+                android:background="#201bc1"
                 android:gravity="center"
                 android:padding="3dp"
-                android:text="이름(A)" />
+                android:text="이름(A)"
+                android:textColor="#ffffff" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="1dp"
                 android:layout_marginLeft="1dp"
-                android:background="#9bef9c"
+                android:background="#201bc1"
                 android:gravity="center"
                 android:padding="3dp"
-                android:text="이름(B)" />
+                android:text="이름(B)"
+                android:textColor="#ffffff" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="1dp"
                 android:layout_marginLeft="1dp"
-                android:background="#9bef9c"
+                android:background="#201bc1"
                 android:gravity="center"
                 android:padding="3dp"
-                android:text="A" />
+                android:text="A"
+                android:textColor="#ffffff" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="1dp"
                 android:layout_marginLeft="1dp"
-                android:background="#9bef9c"
+                android:background="#201bc1"
                 android:gravity="center"
                 android:padding="3dp"
-                android:text=":" />
+                android:text=":"
+                android:textColor="#ffffff" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="1dp"
                 android:layout_marginLeft="1dp"
-                android:background="#9bef9c"
+                android:background="#201bc1"
                 android:gravity="center"
                 android:padding="3dp"
-                android:text="B" />
+                android:text="B"
+                android:textColor="#ffffff" />
         </TableRow>
 
         <!-- 결승 경기 -->
@@ -152,5 +159,12 @@
                 android:background="#ffffff" />
         </TableRow>
     </TableLayout>
+
+    <Button
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:text="Champion"
+        android:layout_gravity="right"
+        android:id="@+id/nextFinish"/>
 
 </LinearLayout>
