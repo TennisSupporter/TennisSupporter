@@ -2,7 +2,7 @@
 Tennis Supporter (TS) is a service that support application user.
 
 This application offer new information that asscociated with tennis such as new tennis match to using Google Cloud Messaging.
-and also it can make make a list of matches.
+and also it can make a list of matches.
 
 This project contains client libraries and samples to help developers interface with and explore the Google Cloud Messaging APIs.
 
