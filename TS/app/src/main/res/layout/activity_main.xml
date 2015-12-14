@@ -63,9 +63,21 @@
         android:text="관리자"
         android:id="@+id/button4"
         android:onClick="mangerButtonClicked"
-        android:background="#5affffff"
+        android:background="#5a714d4b"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:clickable="false"
+        android:contextClickable="false" />
 
+    <TextView android:text="hello" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/informationTextView"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/registrationProgressBar" />
 </RelativeLayout>

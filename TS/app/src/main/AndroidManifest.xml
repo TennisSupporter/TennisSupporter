@@ -2,6 +2,13 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="ts.team.tennissupporter">
 
+    <uses-sdk android:minSdkVersion="8" android:targetSdkVersion="17"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <permission android:name="ts.team.tennissupporter.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+    <uses-permission android:name="ts.team.tennissupporter.permission.C2D_MESSAGE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/icon1"
@@ -16,11 +23,50 @@
             </intent-filter>
         </activity>
 
+        <receiver
+            android:name="com.google.android.gms.gcm.GcmReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <category android:name="ts.team.tennissupporter" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="ts.team.tennissupporter.MyGcmListenerService"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="ts.team.tennissupporter.MyInstanceIDListenerService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.gms.iid.InstanceID"/>
+            </intent-filter>
+        </service>
+
         <activity android:name=".ManagerModeActivity"></activity>
         <activity android:name=".MatchesActivity"></activity>
         <activity android:name=".Splash_Activity"></activity>
         <activity android:name=".PasswordActivity"></activity>
         <activity android:name=".MatchesAdminActivity"></activity>
+
+        <service
+            android:name="ts.team.tennissupporter.MyInstanceIDListenerService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.gms.iid.InstanceID"/>
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="ts.team.tennissupporter.RegistrationIntentService"
+            android:exported="false">
+        </service>
 
     </application>
 
